@@ -18,28 +18,23 @@
         li a{
             color: white;
             padding: 14px 16px;
-            /* remove underline */
-            text-decoration: none;
             display: block;
-            text-align: center;
+            text-decoration: none;
         }
-        li a:hover{
+        .active{
+            background-color: #04aa6d;
+        }
+        li a:hover:not(.active){
             background-color: #111;
         }
     </style>
 </head>
 <body>
     <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a class="active" href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
     </ul>
 </body>
 </html>
-
-<!-- 
-    1) li ko float:left kiya hai and ul ko background color diya hai to hame background color show nahi hota hai.ager background color show karwana hai to hame ul ke under overflow:hidden ka use karna hota hai.
- -->
-
- <!-- li ke under anchor tag ke uper text align:center property tabhi work karti hai jab anchor tag ke under ham display:block property ka use karte hai. -->
